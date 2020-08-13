@@ -36,4 +36,4 @@ Dentre do tempo disposto para a realização deste desafio, não foi possível i
 
 Realize o download do repositório. Navegue até a pasta em que o mesmo foi salvo pelo prompt de comando, e digite `ng serve`. Abra seu navegador e digite o endereço `http://localhost:4200/`. 
 
-Para interromper a execução pressione ctrl + C em seu prompt de comando.
+Para interromper a execução pressione `ctrl + C` em seu prompt de comando, digite `s` e pressione `Enter`.
