@@ -1,0 +1,39 @@
+<h3>Preencha o formulário para se inscrever na melhor newsletter sobre covid-19</h3>
+<hr>
+<form method="POST" (ngSubmit)="onAddToNewsletter(f)" #f="ngForm">
+    <label for="nome">Nome*:</label>
+    <input name="nome" id="nome" class="campo-texto" type="text" placeholder="Fulano" required ngModel>
+
+    <label for="email">E-mail*:</label>
+    <input name="email" id="email" type="email" class="campo-texto" placeholder="fulano@exemplo.com" required ngModel email>
+    
+    <label for="idade">Idade*:</label>
+    <input name="idade" id="idade" class="campo-texto" maxlength="2" type="number" placeholder="XX" required ngModel>
+        
+    <label class="genero">Gênero*:</label>
+    <ul>
+        <li>
+            <input type="radio" name="genero" id="genero-m" value="Masculino" ngModel required>
+            <label for="genero-m">Masculino</label>
+        </li>
+        <li>
+            <input type="radio" name="genero" id="genero-f" value="Feminino" ngModel>
+            <label  for="genero-f">Feminino</label>
+        </li>
+        <li>
+            <input type="radio" name="genero" id="genero-o" value="Outro" ngModel>
+            <label for="genero-o">Outro</label>
+        </li>
+        <li>
+            <input type="radio" name="genero" id="genero-p" value="Não informado" ngModel>
+            <label for="genero-p">Prefiro não dizer</label>    
+        </li>
+    </ul>
+
+    <span class="checkbox-text">
+        <input type="checkbox" name="lista" id="lista" ngModel>
+        <label for="lista">Desejo receber e-mails diários</label>
+    </span>
+        
+    <button type="submit" class="registrar">Cadastrar</button>
+</form>

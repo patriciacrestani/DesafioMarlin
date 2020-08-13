@@ -1,0 +1,15 @@
+button{
+    background-color: red;
+    color: white;
+    width: 30%;
+    float: left;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+  
+button:hover {
+    opacity:1;
+}

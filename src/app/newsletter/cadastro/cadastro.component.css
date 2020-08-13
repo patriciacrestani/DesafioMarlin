@@ -1,0 +1,57 @@
+form{
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 70px auto;
+    column-gap: 5px;
+    row-gap: 20px;
+    align-items: center;
+    justify-items: start;
+}
+
+input[type=text], input[type=number], input[type=email] {
+    width: 50%;
+    display: inline-block;
+    padding: 15px;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 20px;
+}
+  
+input[type=text]:focus, input[type=number]:focus, input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.genero{
+    text-align: start;
+}
+
+li{
+    list-style: none;
+    line-height: 25px;
+}
+
+.checkbox-text{
+    grid-column: 1 / span 2;
+}
+
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+
+.registrar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+    grid-row: 6;
+    grid-column: 1 / span 2;
+}
+  
+.registrar:hover {
+    opacity:1;
+}

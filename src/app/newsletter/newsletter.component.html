@@ -1,0 +1,2 @@
+<app-cadastro *ngIf="cadastrado==false"  (novoCadastroEvento)="setPerfil($event)"></app-cadastro>
+<app-detalhes *ngIf="cadastrado==true"  (deleteCadastroEvento)="deletePerfil($event)" [perfil]="perfil"></app-detalhes>

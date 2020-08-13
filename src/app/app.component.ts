@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'desafiomarlin';
+  // Propriedades titulo e subtitulo da pagina
+  titulo = 'Exibindo resultado de busca por "Covid 19"';
+  subtitulo = 'Encontramos um total de 20 resultados para a sua busca';
 }
