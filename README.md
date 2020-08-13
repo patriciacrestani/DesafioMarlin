@@ -1,27 +1,39 @@
-# Desafiomarlin
+# Desafio Marlin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
+Este projeto tem por objetivo:
+- Recriar o estilo da imagem "src/assets/images/Tela Desafio Front-End.png" utilizando HTML e CSS, sem auxílio de nenhum framework;
+- Exibir as notícias, conforme a figura, utilizando uma fake API; e
+- Realizar o cadastro e a visualização dos dados cadastrados do usuário em uma newsletter.
 
-## Development server
+Para isso, foi utilizado Angular 8.0.0 e a [JSONPlaceholder fake API](https://jsonplaceholder.typicode.com/). A página da fake API para este projeto encontra-se [aqui](https://my-json-server.typicode.com/patriciacrestani/DesafioMarlin).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Estrutura do Projeto
 
-## Code scaffolding
+Este projeto possui 6 componentes:
+- O componente principal AppComponent, responsável pela exibição dos elementos principais da página. Possui três filhos:
+  - O componente filho NewsComponent, responsável pela exibição das notícias em cards, conforme a figura;
+  - O componente filho MenuComponent, responsável pelo menu lateral da página;
+  - O componente filho NewsletterComponent, responsável pela lógica e visualização relacionadas a newsletter. Possui dois filhos:
+    - O componente CadastroComponent, responsável pelo cadastro do usuário na newsletter; e
+    - O componente DetalhesComponent, responsável pela exibição dos dados cadastrais do usuario.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Observações
 
-## Build
+No componente DetalhesComponent, é possível excluir o cadastro do usuário na newsletter, para a realização de mais testes sem a necessidade de reiniciar o servidor.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Os comentários no código não possuem acentuação ou caracteres especiais, como ç, para que não haja nenhum conflito com os mesmos na execução do código.
 
-## Running unit tests
+Como a fake API simplesmente simula uma API o cadastro do usuário na newsletter não é salvo nele. Conforme o site informa:
+> Important: the resource will not be really created on the server but it will be faked as if. In other words, if you try to access a post using 101 as an id, you'll get a 404 error.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+É possível que o console do navegador retorne um erro por não conseguir postar com a url informada.
 
-## Running end-to-end tests
+## Desafios
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Dentre do tempo disposto para a realização deste desafio, não foi possível implementar um código que alterasse o título da página, visto que seria uma implementação de maior complexidade com o uso de rotas no projeto.
 
-## Further help
+## Como Rodar o Projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Realize o download do repositório. Navegue até a pasta em que o mesmo foi salvo pelo prompt de comando, e digite `ng serve`. Abra seu navegador e digite o endereço `http://localhost:4200/`. 
+
+Para interromper a execução pressione ctrl + C em seu prompt de comando.
